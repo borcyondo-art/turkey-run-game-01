@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gobble Dash — Tilly's Great Escape</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #2b1a12; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #wrap { width: min(1280px, 100vw); }
+  canvas {
+    display: block; width: 100%; height: auto; aspect-ratio: 16 / 9;
+    background: #f7b267; border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .55);
+  }
+  p { color: #f3e2c7; font: 14px/1.5 system-ui, sans-serif; text-align: center; margin: 8px 0 0; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720" aria-label="Gobble Dash turkey escape game"></canvas>
+  <p>Gobble Dash — keyboard: Space / W / Up to jump, S / Down to duck, P to pause, M to mute. Mouse: click to jump, click the buttons to start or restart.</p>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
